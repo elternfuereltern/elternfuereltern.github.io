@@ -1,0 +1,16 @@
+#info {
+    padding: 5px 0;
+}
+
+#info * {
+    color: #a9a9a9;
+}
+
+#info .info-text {
+    transition: all .35s;
+    opacity: 0;
+}
+
+#info:hover .info-text {
+    opacity: 1;
+}
