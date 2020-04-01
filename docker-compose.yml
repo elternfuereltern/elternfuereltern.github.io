@@ -6,8 +6,6 @@ services:
     image: e4e/muenzi/website:1.0.0
     build:
       context: .
-    ports:
-       - "8008:80"
     restart: unless-stopped
     networks:
       - web
