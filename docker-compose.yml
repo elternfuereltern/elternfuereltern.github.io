@@ -3,7 +3,8 @@ version: "3"
 services:
 
   website:
-    image: e4e/muenzi/website:1.0.0
+    container_name: ${SCHOOL}_www
+    image: e4e/${SCHOOL}/website:1.0.0
     build:
       context: .
     restart: unless-stopped
@@ -11,9 +12,9 @@ services:
       - web
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.www-muenzi.rule=Host(`www.muenzi.elternfuereltern.de`)"
-      - "traefik.http.routers.www-muenzi.entrypoints=websecure"
-      - "traefik.http.routers.www-muenzi.tls.certresolver=le"
+      - "traefik.http.routers.www-${SCHOOL}.rule=Host(`www.${SCHOOL}.elternfuereltern.de`)"
+      - "traefik.http.routers.www-${SCHOOL}.entrypoints=websecure"
+      - "traefik.http.routers.www-${SCHOOL}.tls.certresolver=le"
       - "traefik.docker.network=web"
 
 
