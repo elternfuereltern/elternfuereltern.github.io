@@ -4,9 +4,11 @@ services:
 
   website:
     container_name: ${SCHOOL}_www
-    image: e4e/${SCHOOL}/website:1.0.0
+    image: e4e/${SCHOOL}/website
     build:
       context: .
+      args:
+        SCHOOL: ${SCHOOL}
     restart: unless-stopped
     networks:
       - web

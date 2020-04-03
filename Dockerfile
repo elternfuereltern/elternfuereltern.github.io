@@ -1,4 +1,7 @@
 FROM httpd:2.4.41-alpine
 
-COPY ./src/ /usr/local/apache2/htdocs/
+ARG SCHOOL
+
+COPY ./src.${SCHOOL}/ /usr/local/apache2/htdocs/
+
 
