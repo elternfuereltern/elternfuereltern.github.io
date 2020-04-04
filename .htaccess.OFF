@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName "Eltern fuer Eltern"
-Require valid-user
-AuthUserFile /var/www/virtual/ratopi/e4e.htpasswd
-
