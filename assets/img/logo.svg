@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5c4d42;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3a302a;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="200" fill="url(#bg)"/>
+  <!-- Two parent silhouettes side by side -->
+  <!-- Left person -->
+  <circle cx="145" cy="130" r="35" fill="rgba(255,255,255,0.85)"/>
+  <path d="M145 170 c-45 0 -70 30 -70 65 c0 10 5 15 15 15 h110 c10 0 15-5 15-15 c0-35-25-65-70-65z" fill="rgba(255,255,255,0.85)"/>
+  <!-- Right person (slightly overlapping) -->
+  <circle cx="255" cy="130" r="35" fill="rgba(244,98,58,0.9)"/>
+  <path d="M255 170 c-45 0 -70 30 -70 65 c0 10 5 15 15 15 h110 c10 0 15-5 15-15 c0-35-25-65-70-65z" fill="rgba(244,98,58,0.9)"/>
+  <!-- Text: EfE -->
+  <text x="200" y="330" text-anchor="middle" font-family="Gill Sans, Calibri, Trebuchet MS, sans-serif" font-size="72" font-weight="700" fill="#fff" letter-spacing="4">EfE</text>
+</svg>
+
